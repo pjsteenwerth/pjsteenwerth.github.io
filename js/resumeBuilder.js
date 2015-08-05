@@ -52,10 +52,12 @@ bio.display = function() {
 bio.display();
 
 var education = { 
-	"schools":
+    
+    "schools":
 	{
 	"name" : "Port Richmond Highschool",
 	"dates" : "2001-2005",
+	"degree" : "GED diploma",
 	"location" : "85 Saint Josephs Avenue, Staten Island, NY 10302"
     }
   ,
@@ -75,6 +77,8 @@ education.display = function() {
 	$(".education-entry:last").append(formattedSchoolName);
 	var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools.dates);
 	$(".education-entry:last").append(formattedSchoolDates);
+	var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools.degree);
+	$(".education-entry:last").append(formattedSchoolDegree);
 	var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools.location);
 	$(".education-entry:last").append(formattedSchoolLocation);
 	var formattedOnlineName = HTMLonlineSchool.replace("%data%", education.onlineCourses.school);
