@@ -123,7 +123,7 @@ var work = {
 	},
 	 {
     "employer" : "BabiesRUs",
-	"title" : "moening stock person",
+	"title" : "morning stock person",
 	"dates" :"2005-2007",
 	"location" :"Staten Island Mall, 2655 Richmond Ave, Staten Island, NY 10314",
     "description" :"I worked in the shipping and receiving part of a retail environment. My job included unloading a truck at 6am, stocking shelves, reading planograms, assisting customers, attending daily meetings, and yearly inventory.  "
