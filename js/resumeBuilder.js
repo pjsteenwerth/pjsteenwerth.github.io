@@ -163,8 +163,10 @@ var projects = {
      },  
 	 {
      "title" : "Portfolio project",
-     "description" : "I constructed web page according to a mockup and added my own pictures and modals to the design.",	
+     "description" : "I constructed a web page according to a mockup and added my own pictures and modals to the design.",	
      "dates" : "2014",
+     "url" : "http://pjsteenwerth.bitballoon.com/",
+
      }
     ]
 
@@ -175,12 +177,14 @@ projects.display = function() {
 	for (project in projects.projects) {
 	$("#projects").append(HTMLprojectStart);
 
-    var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+    var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title); 	
     $(".project-entry:last").append(formattedTitle);
     var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
     $(".project-entry:last").append(formattedDates);
     var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
     $(".project-entry:last").append(formattedDescription);
+    var formattedURL = HTMLprojectURL.replace("%data%", projects.projects[project].url);
+    $(".project-entry:last").append(formattedURL);
 
  }
 };
