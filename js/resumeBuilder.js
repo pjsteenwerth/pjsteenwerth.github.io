@@ -83,7 +83,7 @@ education.display = function() {
 	$(".education-entry:last").append(formattedSchoolLocation);
 	var formattedOnlineName = HTMLonlineSchool.replace("%data%", education.onlineCourses.school);
 	$(".education-entry:last").append(HTMLonlineClasses);
-	var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses.date);
+	var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses.dates);
 	$(".education-entry:last").append(formattedOnlineDates);
 	var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses.title);
 	$(".education-entry:last").append(formattedOnlineTitle);
